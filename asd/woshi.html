@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			.biggest {
+				width: 1010px;
+				height: auto;
+			}
+			
+			.div1 {
+				width: 1000px;
+				height: 70px;
+			}
+			
+			.div1x1 {
+				float: left;
+				font-family: "Microsoft Yahei", "PingFang SC", Avenir, "Segoe UI", "Hiragino Sans GB", STHeiti, "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
+				height: 37 px;
+				width: 131px;
+				margin-top: 18px;
+				background-color: #1479D7;
+			}
+			
+			.img1x1 {
+				width: 100%;
+			}
+			
+			.div1x2 {
+				width: 471px;
+				height: 30px;
+				float: left;
+				margin-top: 19px;
+				margin-left: 143px;
+				border: 1px solid black;
+				border-radius: 20px;
+				background-color: #f3f6f8;
+				border-color: rgb(233, 233, 233);
+				overflow: hidden;
+			}
+			
+			.divsogou {
+				width: 85px;
+				height: 30px;
+				background-color: #1479d7;
+				float: right;
+				border-radius: inherit;
+			}
+			
+			.div1x2-1 {
+				width: 69px;
+				height: 30px;
+				float: left;
+			}
+			
+			.divtext {
+				width: 307px;
+				height: 28px;
+				float: left;
+				background-color: #f3f6f8;
+				margin-top: 1.1px;
+			}
+			
+			.div1x2-1-1 {
+				color: #404040;
+				cursor: pointer;
+				text-align: center;
+				height: 30px;
+			}
+			
+			#a1 {
+				font-stretch: 100%;
+				font-family: "微软雅黑";
+			}
+			
+			.div2 {
+				width: 1000px;
+				height: 45px;
+				float: left;
+				margin-bottom: 20px;
+				background-color: #1479D7;
+			}
+			
+			.ulbig {
+				width: 986px;
+				height: 44px;
+				background-color: #1479D7;
+				float: left;
+				font-size: 16px;
+				font-stretch: 100%;
+				line-height: 44px;
+				list-style-type: disc;
+				color: white;
+				cursor: pointer;
+			}
+			
+			.limin {
+				font-family: "microsoft yahei";
+				float: left;
+				list-style-type: none;
+				width: 80px;
+				text-align: center;
+				height: 44px;
+			}
+			
+			.linmin:hover {
+				background-color: rgb(225, 225, 225);
+			}
+			
+			.limin1 {
+				font-family: "microsoft yahei";
+				float: left;
+				list-style-type: none;
+				width: 78px;
+				text-align: center;
+				height: 44px;
+			}
+			
+			.limin2 {
+				font-family: "microsoft yahei";
+				float: left;
+				list-style-type: none;
+				width: 103px;
+				text-align: center;
+				height: 44px;
+			}
+			
+			.div3 {
+				height: 54px;
+				width: 1000px;
+				float: left;
+			}
+			
+			.div3x1 {
+				width: 663px;
+				height: 54px;
+				float: left;
+				background-image: url(img/7us0b98b.jpg);
+			}
+			
+			.div3x2 {
+				width: 326px;
+				height: 54px;
+				float: right;
+				background-color: aliceblue;
+			}
+			
+			.after {
+				content: '';
+				top: 0px;
+				margin-top: 13px;
+				width: 10px;
+				height: 15px;
+				background-image: url(img/zhuomian.png);
+				background-repeat: no-repeat;
+				float: left;
+			}
+			
+			.after:hover {
+				background-position: 0px -30px;
+			}
+			
+			.after1 {
+				content: '';
+				top: 0px;
+				margin-top: 21px;
+				width: 10px;
+				height: 15px;
+				background-image: url(img/zhuomian.png);
+				background-repeat: no-repeat;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.after1:hover {
+				background-position: 0px -30px;
+			}
+			
+			.psss {
+				margin-top: 3.5px;
+			}
+			
+			.div3biao {
+				width: 122px;
+				height: 42px;
+				margin: 16px;
+				margin-right: 0px;
+				float: right;
+			}
+			
+			.divbiao1 {
+				width: 40px;
+				height: 40px;
+				background-image: url(img/icons.png);
+				background-position: 0px -93px;
+				float: left;
+			}
+			
+			.divbiao1:hover {
+				background-position: 0px -143px;
+			}
+			
+			.divbiao2 {
+				width: 40px;
+				height: 40px;
+				background-image: url(img/icons.png);
+				background-position: 2px -188px;
+				float: left;
+			}
+			
+			.divbiao2:hover {
+				background-position: 2px -238px;
+			}
+			
+			.divbiao3 {
+				width: 35px;
+				height: 35px;
+				background-color: #f5f8fc;
+				float: left;
+				border: 1px solid rgb(202, 224, 243);
+			}
+			
+			.pass1 {
+				margin-top: 4.5px;
+			}
+			
+			.dashu {
+				width: 323px;
+				margin-right: 10px;
+				height: auto;
+				float: left;
+			}
+			
+			.dashu1 {
+				width: 100%;
+				height: 43px;
+				float: left;
+				border-bottom: 1px solid rgb(202, 224, 243);
+			}
+			
+			.divbiaoti {
+				height: 44px;
+				text-align: center;
+				width: auto;
+				float: left;
+			}
+			
+			.div1small {
+				height: 30px;
+				text-align: center;
+				width: 32px;
+				border-bottom: 4px solid #1479D7;
+				padding-top: 10px;
+				padding-bottom: 0px;
+				float: left;
+			}
+			
+			.div1small2 {
+				height: 30px;
+				text-align: center;
+				width: 64px;
+				border-bottom: 4px solid #1479D7;
+				padding-top: 10px;
+				padding-bottom: 0px;
+				float: left;
+			}
+			
+			.ganggang {
+				background-color: rgb(225, 225, 225);
+				width: 0px;
+				height: 16px;
+				border: 1px solid rgb(225, 225, 225);
+				float: left;
+				margin-top: 14px;
+				margin-left: 12px;
+			}
+			
+			.biaoti {
+				color: #1479D7;
+				float: left;
+				font-size: 16px;
+				text-align: center;
+				font-weight: 400;
+			}
+			
+			.ha {
+				background-color: white;
+				color: #FFFFFF;
+			}
+			
+			.ha:hover {
+				background-color: rgb(225, 225, 225);
+			}
+			
+			.aaa {
+				color: #FFFFFF;
+			}
+			
+			.aaa:hover {
+				background-color: #000000;
+				color: #000000;
+			}
+			
+			.new {
+				width: 288px;
+				height: inherit;
+				border: none;
+				background-color: inherit;
+				float: left;
+				margin-left: 2px;
+			}
+			
+			.ulbig:hover {
+				background-color: (225, 225, 225);
+			}
+			
+			.da1 {
+				width: inherit;
+				height: 600px;
+				float: left;
+			}
+			
+			.dashubiao1 {
+				line-height: 28px;
+				font-weight: 700;
+				list-style: none;
+				font-size: 14px;
+				font-family: "microsoft yahei";
+				text-align: left;
+				margin-top: 13px;
+				white-space: nowrap;
+				font-stretch: 100%;
+			}
+			
+			.zhena {
+				text-decoration: none;
+				color: #000000;
+			}
+			
+			.zhena:hover {
+				color: #1479D7;
+			}
+			
+			.dashubiao2 {
+				line-height: 28px;
+				font-weight: 400;
+				list-style: none;
+				font-size: 12px;
+				font-family: "microsoft yahei";
+				text-align: left;
+				margin-top: 0px;
+				white-space: nowrap;
+				font-stretch: 100%;
+			}
+			
+			.div45 {
+				width: 158px;
+				height: 100px;
+				overflow: hidden;
+				float: left;
+				background-image: url(img/6bgsrtoq.jpg);
+				background-repeat: no-repeat;
+				display: inline-block;
+			}
+			.div416
+			{
+			width: 158px;
+				height: 100px;
+				overflow: hidden;
+				float: left;
+				background-image: url(img/6bgsrtoq.jpg);
+				background-repeat: no-repeat;
+				display: inline-block;	
+			}
+			
+			.div1888 {
+				float: left;
+				width: 326px;
+				height: auto;
+			}
+			.divxiajiba{
+				width:inherit;
+				height: 123px;
+				margin-top: 12px;
+				border: 1px solid rgb(202,224,243);
+				float: left;
+				margin-left: 8px;
+			}
+			.divxxd{
+				width: 325px;
+				height: 30px;
+				border-bottom: 1px solid rgb(202,224,243);
+				float: left;
+			}
+			.4pai{
+				font-size: 12px;
+				font-stretch: 400;
+			}
+			.divsssss{
+				width: 326px;
+				height: 217px;
+				float: left;
+				background-image: url(img/201810081600596438.jpg) ;
+				margin-bottom: 11px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<center>
+			<div class="biggest">
+				<div style="width: 1000px;">
+					<div class="div1">
+						<div class="div1x1">
+							<a href="index.html" target="_blank">
+								<img src="img/logo.png" class="img1x1"  />
+							</a>
+						</div>
+						<div class="div1x2">
+							<div class="div1x2-1">
+								<div class="div1x2-1-1">
+									<div class="psss">
+										<p1 id="a1">网页</p1>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="after"></div>
+							<div class="divtext"><input type="text" class="new"></div>
+							<div class="divsogou">
+								<div class="psss">
+									<center>
+										<font color="white" class="psss">
+											<p>搜狗搜索</p>
+										</font>
+									</center>
+								</div>
+							</div>
+
+						</div>
+						<div class="div3biao">
+							<a href="http://qzone.qq.com" target="_blank">
+								<div class="divbiao1"></div>
+							</a>
+							<a href="http://mail.qq.com" target="_blank">
+								<div class="divbiao2"></div>
+							</a>
+							<a href="https://mail.qq.com/cgi-bin/loginpage">
+								<div class="divbiao3">
+									<div class="pass1">
+										<font color="#60a5e4">登录</font>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="div2">
+						<ul class="ulbig">
+							<a href="http://www.baidu.com" class="aaa">
+								<li class="limin1">首页</li>
+							</a>
+							<li class="limin">媒体湘大</li>
+							<li class="limin">综合新闻</li>
+							<li class="limin">教学科研</li>
+							<li class="limin">校园生活</li>
+							<li class="limin">湘大学人</li>
+							<li class="limin">学子风采</li>
+							<li class="limin">湘大校友</li>
+							<li class="limin">专题新闻</li>
+							<li class="limin">视频新闻</li>
+							<li class="limin2">校报电子版</li>
+							<li class="limin">在线投稿</li>
+							<li class="limin1">更多</li>
+						</ul>
+						<div class="after1"></div>
+
+					</div>
+					<div class="div3">
+						<a href="#" target="_blank">
+							<div class="div3x1"></div>
+						</a>
+						<div class="div3x2"></div>
+					</div>
+					<div class="dashu">
+						<div class="dashu1">
+							<div class="divbiaoti">
+								<div class="div1small2">
+									<h2 class="biaoti">湘大要闻</h2>
+								</div>
+								<div class="ganggang"></div>
+							</div>
+							<div class="div1888">
+								<ul>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11166.html" class="zhena" target="_blank">
+										<li class="dashubiao1">我校思想政治理论课强化“红色”实践教学</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11155.html" class="zhena" target="_blank">
+										<li class=dashubiao2>第三十八届学生田径运动会举行</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11156.html" class="zhena" target="_blank">
+										<li class=dashubiao2>校长周益春专题调研碧泉书院建设发展情况</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11147.html" class="zhena" target="_blank">
+										<li class=dashubiao2>青春无畏 逐梦扬威：“洋光杯”新生定向越野大赛举行</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11149.html" class="zhena" target="_blank">
+										<li class=dashubiao2>我校举办基层党建工作实务专题培训</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11143.html" class="zhena" target="_blank">
+										<li class=dashubiao2>2018级新生班长团支书接受能力素养提升训练</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11142.html" class="zhena" target="_blank">
+										<li class=dashubiao2>校党委书记黄云清赴张家坪村调研驻村帮扶工作</li>
+									</a>
+								</ul>
+							</div>
+							<div class="div1888">
+								<a href="http://news.xtu.edu.cn/html/ztxw_xdgs/show_9902.html" target="_blank" class="zhena">
+									<div class="div45"></div>
+								</a>
+								<div style="float: left;width: 158px;margin-left:10px;margin-top:0px ;">
+									<a href="http://news.xtu.edu.cn/html/ztxw_xdgs/show_9902.html" target="_blank" class="zhena">
+										<li class="dashubiao2">书香遇见墨香——图书馆字<br />画的故事</li>
+								</div>
+
+								</a>
+							</div>
+							<div class="div1888">
+								<ul>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11187.html" class="zhena" target="_blank">
+										<li class=dashubiao2>谭建荣院士受聘为我校“特聘教授”“双聘院士”</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11162.html" class="zhena" target="_blank">
+										<li class=dashubiao2>暖文书信颁奖诵读会暨公益献血活动在我校启动</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11109.html" class="zhena" target="_blank">
+										<li class=dashubiao2>《昨日青空》超前看片会在我校举行</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11070.html" class="zhena" target="_blank">
+										<li class=dashubiao2>“大爱铸师魂 建功新时代”:青年教职工演讲比赛举办</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_10961.html" class="zhena" target="_blank">
+										<li class=dashubiao2>后勤保障处全力做好暑期后勤保障服务工作</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11139.html" class="zhena" target="_blank">
+										<li class=dashubiao2>我校召开学位授权点建设工作推进会</li>
+									</a>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="dashu">
+						<div class="dashu1">
+							<div class="divbiaoti">
+								<div class="div1small2">
+									<h2 class="biaoti">科学湘大</h2>
+								</div>
+								<div class="div1888">
+									<ul>
+										<a href="http://news.xtu.edu.cn/html/zonghexw/show_11166.html" class="zhena">
+											<li class="dashubiao1">我校思想政治理论课强化“红色”实践教学</li>
+										</a>
+										<a href="http://news.xtu.edu.cn/html/zonghexw/show_11165.html" class="zhena" target="_blank">
+											<li class=dashubiao2>我校与湖南稀土金属材料研究院达成科研合作意向</li>
+										</a>
+										<a href="http://news.xtu.edu.cn/html/zonghexw/show_11160.html" class="zhena" target="_blank">
+											<li class=dashubiao2>省公共管理学科院长论坛暨高校MPA案例大赛在我校举行</li>
+										</a>
+										<a href="http://news.xtu.edu.cn/html/zonghexw/show_11154.html" class="zhena" target="_blank">
+											<li class=dashubiao2>化学学院博士研究生陈曼芳在《Small》发表高水平学术论文</li>
+										</a>
+										<a href="http://news.xtu.edu.cn/html/zonghexw/show_11070.html" class="zhena" target="_blank">
+											<li class=dashubiao2>“大爱铸师魂 建功新时代”:青年教职工演讲比赛举办</li>
+										</a>
+										<a href="http://news.xtu.edu.cn/html/zonghexw/show_10961.html" class="zhena" target="_blank">
+											<li class=dashubiao2>后勤保障处全力做好暑期后勤保障服务工作</li>
+										</a>
+										<a href="http://news.xtu.edu.cn/html/zonghexw/show_11139.html" class="zhena" target="_blank">
+											<li class=dashubiao2>我校召开学位授权点建设工作推进会li></a>
+									</ul>
+								</div>
+								<div class="div1888">
+									<a href="http://news.xtu.edu.cn/html/ztxw_xdgs/show_9902.html" target="_blank" class="zhena">
+										<div class="div45"></div>
+									</a>
+									<div style="float: left;width: 158px;margin-left:10px;margin-top:0px ;">
+										<a href="http://news.xtu.edu.cn/html/zonghexw/show_11096.html" target="_blank" class="zhena">
+											<li class="dashubiao2">军训总结表彰大会： <br />浩然书生气沙场秋点兵</li>
+									</div>
+								</div>
+								<div class="div1888">
+								<ul>
+									
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11155.html" class="zhena" target="_blank">
+										<li class=dashubiao2>第三十八届学生田径运动会举行</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11156.html" class="zhena" target="_blank">
+										<li class=dashubiao2>校长周益春专题调研碧泉书院建设发展情况</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11147.html" class="zhena" target="_blank">
+										<li class=dashubiao2>青春无畏 逐梦扬威：“洋光杯”新生定向越野大赛举行</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11149.html" class="zhena" target="_blank">
+										<li class=dashubiao2>我校举办基层党建工作实务专题培训</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11143.html" class="zhena" target="_blank">
+										<li class=dashubiao2>2018级新生班长团支书接受能力素养提升训练</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11142.html" class="zhena" target="_blank">
+										<li class=dashubiao2>校党委书记黄云清赴张家坪村调研驻村帮扶工作</li>
+									</a>
+								</ul>
+							</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="dashu">
+						
+							<div class="divxiajiba">
+								<div class="divxxd"><p class="4pai" style="font-size: 14px;">新闻&nbspAPP&nbsp体育&nbspAPP&nbsp企鹅号&nbsp快报&nbsp视频&nbsp浏览器</p></div>
+								<div class="divxxd"style="background-color: #F5F8FC;"><p class="4pai"style="font-size: 14px;">&nbspLOL&nbspDNF&nbspCF&nbsp王者&nbsp逆战&nbsp火影OL&nbsp天刀&nbsp爱玩</p></div>
+								<div class="divxxd"><p class="4pai"style="font-size: 14px;">&nbsp软件&nbspQ币&nbsp京东&nbsp腾讯地图&nbsp腾讯&nbsp文档&nbsp理财通&nbsp全部</p></div>
+								<div class="divxxd" style="border-bottom: none; background-color:#F5F8FC;: height:32px; width: 100%;"><p class="4pai"style="font-size: 14px;">微信&nbspQQ&nbsp空间&nbsp企业&nbsp微信&nbsp邮箱&nbsp腾讯云&nbsp电脑管家</p></div>
+								
+							</div>
+							<div class="div1small2">
+									<h2 class="biaoti">魅力湘大</h2>
+								</div>
+							<div class="divsssss"></div>
+							<div class="div1888">
+								<a href="http://news.xtu.edu.cn/html/zonghexw/show_11156.html" class="zhena" target="_blank">
+										<li class=dashubiao2>校长周益春专题调研碧泉书院建设发展情况</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11147.html" class="zhena" target="_blank">
+										<li class=dashubiao2>青春无畏 逐梦扬威：“洋光杯”新生定向越野大赛举行</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11149.html" class="zhena" target="_blank">
+										<li class=dashubiao2>我校举办基层党建工作实务专题培训</li>
+									</a>
+									<a href="http://news.xtu.edu.cn/html/zonghexw/show_11162.html" class="zhena" target="_blank">
+										<li class=dashubiao2>暖文书信颁奖诵读会暨公益献血活动在我校启动</li>
+									</a>
+							</div>
+					</div>
+					
+				</div>
+			</div>
+		</center>
+	</body>
+
+</html>
