@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#ssb{
+				width: 300px;
+				height: 300px;
+				border: 1px ;
+			}
+		</style>
+		<script>
+			function createA(){
+				var x=document.getElementById("ssb");
+				var	newA=document.createElement("a");
+				x.appendChild(newA);
+				newA.innerHTML="</br>"+"快来看，这个学JavaScript的上吊了";
+				newA.setAttribute("href","#");
+			} 
+			
+			function deleteA(){
+				var x=document.getElementById("ssb");
+				var y=x.childNodes;
+				var loop=y.length;
+				var t;
+				for(t=loop-1;t>=0;t--)
+				{
+					if(y[t].tagName=="A")
+						x.removeChild(y[t]);
+				}
+				
+			}
+			function deleteP(){
+				var x=document.getElementById("ssb");
+				var y=x.childNodes;
+				var loop=y.length;
+				var t;
+				for(t=loop-1;t>=0;t--)
+				{
+					if(y[t].tagName=="P");
+						x.removeChild(y[t]);
+				}
+			}
+			function changecoloer(){
+				var x=document.getElementById("ssb");
+				var y=x.childNodes;
+				var loop=y.length;
+				var t;
+				for(t=0;t<y.length;t++)
+				{
+					x.style.color="red";
+					
+				}
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+		<div id="ssb">
+			<p>骇人听闻</p>
+			<button onclick="createA()">惨无人道的JavaScript</button>
+			<button onclick="deleteA()">上吊的人的历史痕迹已消失</button>
+			<button onclick="deleteP()">上吊的人的更多的历史痕迹已消失</button>
+			<button onclick="changecoloer()">世道已经变色了</button>
+		</div>
+	</body> 
+</html>
+
+			
