@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#mmp {}
+			
+			.llp{
+				color: black;
+			}
+			.llp:hover{
+				color: red;
+			}
+		
+		</style>
+		<script>
+			
+			function color1(ss){
+				
+			}
+			function color2(ss){
+				
+			}
+			function createRow() {
+				var T = document.getElementById("mmp").getElementsByTagName("tr").length;
+				var x = document.getElementById("mmp").insertRow(T)
+				var y = x.insertCell(0)
+				var z = x.insertCell(1)
+				var q = x.insertCell(2)
+				var m = x.insertCell(3)
+				x.style.height="50px"
+				y.innerHTML=T-1
+				var qq=document.getElementById("name").value
+				z.innerHTML="<p class='llp'>"+qq+"</p>"
+				m.innerHTML="<a id='XX"+T+"' href='#' onclick='deleteRow(this);'>删除</a>"
+				qq.onmouseover=function()
+                  {
+                      this.style.color='red'
+                      alert(1);
+                  }
+				var radio = document.getElementsByName("xingbie");
+				var radioLength = radio.length;
+				for(var i = 0; i < radioLength; i++) {
+					if(radio[i].checked) {
+						var radioValue = radio[i].value;
+					}
+				}
+				if(radioValue==1)
+					q.innerHTML="男"
+				if(radioValue==0)
+					q.innerHTML="女"
+				
+			}
+
+			function deleteRow() {
+				var s = document.getElementById("mmp").getElementsByTagName("tr").length;
+				var w = document.getElementById("mmp").deleteRow(s-1)
+
+			}
+		
+		</script>
+	</head>
+
+	<body>
+
+		<table id="mmp" border="1" width="80%" height="" cellspacing="0">
+			<tr style="height: 50px;">
+				<th colspan="4">姓名<input type="text" id="name"><span><input type="radio" id="xingbie" name="xingbie" value="1">男<input type="radio" id="xingbie" name="xingbie" value="0">女</span></th>
+			</tr>
+				
+			<tr style="height: 50px;">
+				<th>编号</th>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>操作</th>
+			</tr>
+			
+		</table>
+		<button onclick="createRow()">增加一行</button>
+	
+	</body>
+
+</html>
