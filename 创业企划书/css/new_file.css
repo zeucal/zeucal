@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.bgm {
+	background-color: black;
+	width: 100%;
+	height: 960px;
+}
+.bgm2{
+	background-color: black;
+	width: 100%;
+	height: 960px;
+}
+#xiaozi{
+	color:lightcyan;
+	font-size: 20px;
+}
+#ziti2{
+				color: aqua;
+				font-family: "楷体";
+				font-size: 30px;
+			}
+#dazi{
+	color:navajowhite;
+	font-size: 80px;
+}
+#lianjie{
+	
+	position: absolute;
+	left: 60%;
+	top: 550px;
+}
+#lianjie2{
+	color: aliceblue;
+	font-size: 40px;
+	text-decoration: none;
+}
+#lianjie3{
+	
+	position: absolute;
+	left: 60%;
+	top: 650px;
+}
