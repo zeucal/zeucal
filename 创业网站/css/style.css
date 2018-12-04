@@ -1,0 +1,169 @@
+	* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		#menu {
+			position: fixed;
+			right: 30%;
+			width: 700px;
+			height: 40px;
+			top: 0px;
+			
+		}
+		
+		#xiaoli {
+			background-color: gainsboro;
+			list-style-type: none;
+			float: right;
+			margin-left: 1px;
+			padding: 10px;
+			width: 120px;
+			z-index: 9999;
+			float: right;
+		}
+		
+		#xiaoli:hover {
+			color: black;
+		}
+		
+		#zidong {
+			width: auto;
+			height: auto;
+			position:fixed;
+			
+		}
+		
+		#ssq {
+			height: 50px;
+			width: 100%;
+			position: fixed;
+			top: 0px;
+			background-color:gainsboro;
+		}
+		.ssw{
+			text-decoration: none;
+			color: black;
+			font-size: 18px;
+		}
+		.ssw:hover{
+			color: black;
+			font-size:23px;
+			font-weight: 600;
+		}
+		.dah{
+			font-size: 80px;
+			position: absolute;
+			top: 80px;
+			left: 350px;
+		}
+		.dap{
+			font-size: 40px;
+			margin: 20px;
+		}
+		.dapv{
+			
+			position: absolute;
+			top: 680px;
+			left: 350px;
+			height: 500px;
+			align-content: center;
+		}
+		.dahei{
+			width: 100%;
+			height: 1200px;
+			border: 1px solid black;
+			position: absolute;
+			top: 1450px;
+		}
+		.dabiaoti{
+			font-size: 30px;
+			margin: 10px;
+		}
+		.yuankuang{
+			border-radius:100%;
+			border: 1px solid black;
+			width: 300px;
+			height: 300px;
+			overflow: hidden;
+			float: left;
+			position: absolute;
+			left: 20%;
+		}
+		.lastone{
+			background-color:rgb(51,51,51) ;
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			height: 480px;
+			color: gainsboro;
+		}
+			.wei{
+				float: left;
+				margin-left:15% ;
+				width: 30%;
+				margin-top: 15px;
+			}
+			.wei2{
+				float: left;
+				margin-left:10% ;
+				width: 30%;
+				margin-top: 15px;
+			}
+			.wei3{
+				float: left;
+				margin-left:15% ;
+				width: 30%;
+				margin-top: 5px;
+			}
+			.wei4{
+				float: left;
+				margin-left:10% ;
+				width: 30%;
+				margin-top: 5px;
+			}
+			.wei5{
+				float: left;
+				margin-left:10% ;
+				width: 30%;
+				margin-top: 25px;
+			}
+			.wei6{
+				float: left;
+				margin-left:12% ;
+				width: 30%;
+				margin-top: 25px;
+			}
+			.footer{
+				position: absolute;
+				bottom: 5px;
+				left: 36%;
+			}
+			.kengdie{
+				height: 60px;
+			}
+			.qqwwe{
+				position: absolute;
+				bottom: 60px;
+				left: 21%;
+				width: 175px;
+				height: 175px;
+			}
+			.qqwe{
+				width: 170px;
+				height: 170px;
+			}
+			.wei7{
+				float: right;
+				margin-right:14% ;
+				width: 30%;
+				margin-top: 25px;
+			}
+			.qqwwe1{
+				position: absolute;
+				bottom: 60px;
+				right: 23%;
+				width: 175px;
+				height: 175px;
+				background-color: white;
+			}
